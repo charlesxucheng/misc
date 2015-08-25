@@ -20,7 +20,9 @@ public class LookSaySupplier implements Supplier<BigInteger> {
 		if (b) {
 			return lastValue;
 		} else {
-			lastValue = StreamFactoryJava.lookSay(lastValue);
+			synchronized (lastValue) {
+				lastValue = StreamFactoryJava.lookSay(lastValue);
+			}
 			return lastValue;
 		}
 	}

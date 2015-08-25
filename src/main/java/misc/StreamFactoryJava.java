@@ -11,6 +11,11 @@ import org.apache.commons.lang3.tuple.Pair;
 
 public class StreamFactoryJava {
 
+	/**
+	 * Simple implementation of Scala List span-like method.
+	 * @param l list of Integers
+	 * @return two lists split from input list. First list contains all consecutive occurrence of the head element. Second list returns the rest.
+	 */
 	static Pair<List<Integer>, List<Integer>> span(List<Integer> l) {
 		if (l != null && l.isEmpty()) {
 			List<Integer> l1 = new Vector<Integer>();
