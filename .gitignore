@@ -1,0 +1,7 @@
+target/
+build/
+bin/
+.cache-main
+.cache-tests
+.classpath
+.gradle/
