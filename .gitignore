@@ -7,3 +7,5 @@ bin/
 .gradle/
 .project
 .settings/org.eclipse.jdt.core.prefs
+.settings/gradle.prefs
+.settings/org.eclipse.core.resources.prefs
